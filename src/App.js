@@ -22,8 +22,7 @@ function App() {
 
     function handleSearch(){
      if(name){
-      axios(`https://api.openweathermap.org/data/2.5/weather?q=${name}&units=metric&appid=553a8f4e89f383d583ee941ce75cfb78`).
-      then((res)=> { 
+      axios(`https://api.openweathermap.org/data/2.5/weather?q=${name}&units=metric&appid=553a8f4e89f383d583ee941ce75cfb78`).then((res)=> { 
         console.log(res)
             
        let weathermain =  res.data.weather[0].main
@@ -80,7 +79,7 @@ function App() {
          <div className="default">
             <h2>Search for the weather</h2>
             <p>Enter a city name to get current weather info</p>
-            <img src={weathersearch} ></img>
+            <img src={weathersearch} alt='weather-search'></img>
          </div> }
      </div>
      
