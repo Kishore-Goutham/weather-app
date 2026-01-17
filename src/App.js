@@ -24,7 +24,7 @@ function App() {
      if(name){
       axios(`https://api.openweathermap.org/data/2.5/weather?q=${name}&units=metric&appid=553a8f4e89f383d583ee941ce75cfb78`).
       then((res)=> { 
-        // console.log(res)
+        console.log(res)
             
        let weathermain =  res.data.weather[0].main
 
